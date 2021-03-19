@@ -46,6 +46,20 @@ br-prod
 br-staging
 
 #------------------------------------------------------------------------------
+# Hungary
+
+[hu-prod]
+ofn.froggle.org ansible_host=192.248.179.121
+
+[hu-staging]
+ofn.froggle.org ansible_host=192.248.179.121
+
+[hu:children]
+hu-prod
+hu-staging
+
+
+#------------------------------------------------------------------------------
 # Colombia
 
 [co-prod]
@@ -203,6 +217,7 @@ es-staging
 
 [ofn_servers:children]
 local
+hu
 au
 ca
 in

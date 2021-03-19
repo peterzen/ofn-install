@@ -1,10 +1,10 @@
 ---
 
 # User name and password for running ansible on host
-user: ofn-admin
+user: ofn
 
 # User name for deployment
-deployment_user: ofn-deploy
+deployment_user: root
 
 # Connecting to the server
 #   ssh_pubkey - Location of the SSH public key file for the user created by
@@ -65,6 +65,7 @@ env:
 db: openfoodnetwork
 test_db: ofn_test
 db_user: ofn_user
+db_password: ofn123
 db_host: localhost
 postgres_encoding: en_US.utf8
 
